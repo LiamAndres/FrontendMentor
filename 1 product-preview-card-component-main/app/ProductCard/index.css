@@ -49,11 +49,8 @@
         width: 90%;
     }
 
-    .image-container{    
-        /* height: 42vh; */
-        /* text-align: center; */
+    .image-container{
         margin: 20px 0px 0px 0px;
-        /* width: 296px; */
     }
 
     .image-container img{
@@ -61,7 +58,7 @@
         filter: brightness(90%);
         border-radius: 8px 8px 0px 0px;
     }
-    /* la img y el div del txt tienen mismo tamaño, no usar el margin si no el padding */
+    
     .detail-product{
         padding: 20px 10px 10px 20px;
         border-radius: 0px 0px 8px 8px;
