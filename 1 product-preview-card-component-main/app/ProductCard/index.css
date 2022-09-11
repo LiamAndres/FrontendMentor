@@ -129,8 +129,8 @@
 
         .product-card{
             display: flex;
-            margin: 30px 0px 0px 0px;
-            width: 66%;
+            margin: 20vh 0vh 0vh 0vh ;
+            width: 80vw;
         }
 
         .image-container{
@@ -156,7 +156,13 @@
     }
 
     @media (min-width: 992px){
+        .product-card{
+            width: 60vw;
+        }
     }
 
     @media (min-width: 1312px){
+        .product-card{
+            width: 40vw;
+        }
     }
