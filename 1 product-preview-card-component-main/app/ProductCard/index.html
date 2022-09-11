@@ -13,11 +13,13 @@
     <section><!-- inicio section -->
         <div class="product-card">
             <!-- inicio image-container -->
-            <div class="image-container">
+            <picture class="image-container">
                 <!-- <div class="shadow"> -->
-                    <img src="../../images/image-product-mobile.jpg" alt="">
+                    <source media="(min-width: 688px)" srcset="../../images/image-product-desktop.jpg"/>
+                    <img class="img-product" src="../../images/image-product-mobile.jpg" alt="">
+                    <!-- <img src="./images/image-product-mobile.jpg" alt="" /> -->
                 <!-- </div>  -->           
-            </div> <!-- fin image-container -->
+            </picture> <!-- fin image-container -->
     
             <!-- inicio detail-product -->
             <div class="detail-product">
