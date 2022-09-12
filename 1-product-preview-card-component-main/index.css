@@ -5,13 +5,14 @@
 }
 
 /* IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
 
 /* VARIABLES */
 :root {
     /*paleta de colores*/
     --Dark-Cyan: hsl(158, 36%, 37%);
+    --Hover-Dark-Cyan: hsl(158, 36%, 32%);
+    --Active-Dark-Cyan: hsl(158, 36%, 28%);
     --Cream: hsl(30, 38%, 92%);
     --Very-Dark-Blue: hsl(212, 21%, 14%);
     --Dark-Grayish-Blue: hsl(228, 12%, 48%);
@@ -24,9 +25,8 @@
     --title-lg: 34px;
 
     /* familias de fuentes */
-    --letra:"Montserrat:wght@0,300";
-    --Font-Family-Montserrat: 'Montserrat', sans-serif;
-    --Font-Family-Fraunces: 'Fraunces', serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Fraunces: 'Fraunces', serif;
     }
 
     html {
@@ -36,12 +36,16 @@
 
     body{
         background-color: var(--Cream);
-        font-family: var(--Font-Family-Montserrat);
+        font-family: var(--Montserrat);
         font-size: var(--text-md);
+        min-height: 100vh;
+        display: flex;
+        align-content: center;
     }
 
     section{        
         text-align: -webkit-center;
+        align-self: center;
         width: 100vw;
     }
 
@@ -68,7 +72,7 @@
         /* width: 296px; */
     }
     h1{
-        font-family: var(--Font-Family-Fraunces);
+        font-family: var(--Fraunces);
         margin: 10px 0px 5px 0px;
         font-size: var(--title-lg);
     }
@@ -91,10 +95,13 @@
         align-items: center;
         margin: 10px 0px 10px 0px;    
     }
-
+    .detail-product .price .paragraph-price{
+        font-family: var(--Fraunces);
+    }
     .paragraph-price{
         margin: 0px 15px 0px 0px;
         color: var(--Dark-Cyan);
+        font-family: var(--Fraunces);
     }
     .discount-price{
         font-size: var(--text-lg);
@@ -119,6 +126,16 @@
         margin: 5px 0px 5px 0px;
         background-color: var(--Dark-Cyan);
         color: var(--White);
+        transition: background-color 0.25s ease-out;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: var(--Hover-Dark-Cyan);
+    }
+
+    button:active{
+        background-color: var(--Active-Dark-Cyan);
     }
 
     @media (min-width: 376px){
@@ -129,7 +146,7 @@
 
         .product-card{
             display: flex;
-            margin: 20vh 0vh 0vh 0vh ;
+            /* margin: 20vh 0vh 0vh 0vh ; */
             width: 80vw;
         }
 
